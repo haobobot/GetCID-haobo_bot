@@ -1,4 +1,4 @@
-# GetCID-haobo_bot
+# GetCID-Pro-确认ID获取工具
 GetCID-Pro
 haobo,getcid
 GetCID-Pro
