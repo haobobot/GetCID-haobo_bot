@@ -19,7 +19,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
        if len(iid) == 63 or len(iid) == 54:
            await context.bot.send_message(chat_id=update.effective_chat.id,text=f'receive {update.effective_user.first_name} Request iid:{iid}')
            url = 'https://api.haobo.org/api_get?id={}&tid={}&tuser={}&api={}'.format(iid,"YOUID","None",'API')
-           getiid = requests.get(url, timeout=10)
+           getiid = requests.get(url)
            await context.bot.send_message(chat_id=update.effective_chat.id, text=f'{getiid.text}')
        else:
            cid_message = "The number of iIDs is incorrect, please check."
